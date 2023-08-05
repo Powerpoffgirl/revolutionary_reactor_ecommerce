@@ -1,3 +1,19 @@
+Deployed Link:- https://64cddccc2ca857119aa9635d--graceful-quokka-436a39.netlify.app/
+
+Project description:- 
+At home page to add any product to cart user has to click on add to cart button. On clicking it will navigate you to the next page i.e. ProductPage where you can read more details about the product. User can confirm the product quantity by clicking on the counter button. Then on clicking add to cart button. Product along with its quantity is added to the cart. User can check the items quantities in the cart. Then, to add more products user can click on the Shopcart logo & he will be again navigated to the home page, where he can repeat the whole procedure to place more orders. 
+
+Few more features added are:-
+1. On hover over any product the whole description will be shown.
+2. Onclicking on the heart icon on any product you can add it to your watch list. Watched items will be shown with red heart.
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
