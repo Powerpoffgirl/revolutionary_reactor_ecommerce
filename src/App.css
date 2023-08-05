@@ -1,38 +1,432 @@
-.App {
-  text-align: center;
+.brown_header_line{
+    background-color: #f8f0e6;
+    height: 4px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.info_header_line{
+    background-color: #1c3c2b;
+    height: 30px;
+    color: blanchedalmond;
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.info_header_left {
+    padding-top: 5px;
+}
+
+.info_header_middle{
+    padding-top: 5px;
+}
+
+.info_header_right{
+    padding-top: 5px;
+}
+
+.Navbar{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+    /* padding-left: 5%;
+    padding-right: 5%; */
+    padding-top: 1%;
+    justify-content: space-between;
+}
+
+.NavbarLeft{
+    display: flex;
+    flex-direction: row;
+    /* gap: 45px; */
+    align-items: center;
+}
+
+.NavbarRight{
+    display: flex;
+    flex-direction: row;
+    /* gap: 45px; */
+    align-items: center;
+}
+
+.searchContainer{
+    width: 300px;
+}
+
+.searchBar{
+    width: 100%;
+    border-radius: 50px;
+    height: 150%;
+    border: none;
+    padding-left: 10px;
+    background-color: rgb(241, 238, 233);
+}
+
+.banner{
+    background-color: antiquewhite;
+     /* width: 90%;  */
+     /* margin-top: 2%; */
+     /* margin-left: 5%;  */
+     /* margin-right: 5%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.bannerLeft {
+    margin-top: 54px;
+  }
+  
+
+/* .bannerRight{
+    margin-top: 25px;
+} */
+
+.bannerLeftHeading{
+    color:#1c3c2b;
+    margin-bottom: 20px;
+}
+
+.headPhoneGirl{
+    margin-top: 5px;
+    margin-right: 80px;
+    /* width: 269px; */
+}
+
+.bannerButton{
+    background-color: #1c3c2b;
+    color: blanchedalmond;
+    border: none;
+    border-radius: 50px;
+    width: 130px;
+    height: 50px;
+    font-size: large;
+}
+
+/* Media Query for Small Mobile Screens */
+@media (max-width: 576px) {
+  .bannerLeftHeading {
+    font-size: 18px;
+  }
+
+  .bannerButton {
+    font-size: 14px;
+    width: 100px;
+    height: 36px;
+  }
+
+  .headPhoneGirlContainer {
+    max-width: 180px;
+    margin-right: 20px;
+  }
+
+  .headPhoneGirl {
+    width: 100%;
+    height: auto;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.productListContainer{
+    margin-top: 2.5%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-.App-link {
-  color: #61dafb;
+.productListButton{
+    border-radius: 50px;
+    margin-right: 25px;
+    border: none;
+    font-size: small;
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bolder;
+    justify-content: space-around;
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.productListHeading{
+    margin-top: 2.5%;
+    margin-bottom: 2%;
+}
+
+.cartButton{
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    border-color: black;
+    font-weight: bold;
+}
+
+.cartButton:hover{
+    border-radius: 50px;
+    background-color: #1c3c2b;
+    color: #f8f0e6;
+}
+
+.starRating {
+    color: green;
+}
+
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+  
+.truncate:hover {
+    white-space: normal;
+}
+
+.productImage {
+    display: block;
+    margin: 20px auto;
+    width: 200px; /* Adjust the width to your preferred size */
+    height: 200px; /* Adjust the height to your preferred size */
   }
-  to {
-    transform: rotate(360deg);
+
+  .heart-icon {
+    position: relative;
+    top: 0;
+    left: 250px;
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
   }
+  
+  .heart-icon i {
+    color: grey;
+  }
+  
+  .heart-icon:hover i {
+    color: red;
+  }
+  
+  .productInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .title {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .price {
+    margin-left: 10px;
+  }
+
+
+  .searchContainer {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    border-radius: 50px;
+    background-color: rgb(241, 238, 233);
+    padding: 5px 10px; /* Add some padding to create space for the icon */
+  }
+  
+  .searchBar {
+    flex: 1;
+    width: 100%;
+    border: none;
+    background-color: transparent; /* Remove the background color to make it transparent */
+  }
+  
+  .searchIconContainer {
+    margin-left: 10px;
+    color: grey;
+  }
+  
+  .buttonList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  .sortIcon{
+    background-color: white;
+    border-radius: 50px;
+    margin-right: 25px;
+    font-size: small;
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bolder;
+    justify-content: space-around;
+    border: 1px solid lightgray;
+  }
+
+.productPageConatiner{
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+}
+
+.productSection{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    padding-top: 1%;
+    border-top: 1px solid lightgray;
+}
+
+.productPageConatinerLeft{
+    padding-left: 8%;
+    padding-right: 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.productSmallImage{
+    /* margin: 6px; */
+    width: 20%;
+}
+
+.productPageConatiner{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+
+.productSmallImages{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.counter{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+
+.buyButton{
+    border-radius: 50px;
+    width: 150px;
+    height: 42px;
+    font-size: small;
+    font-weight: bold;
+    border: none;
+    background-color: #1c3c2b;
+}
+
+.buyButton:hover{
+    background-color:whitesmoke;
+    color:  #1c3c2b;
+    border: 1px solid #1c3c2b;
+}
+
+.addToCart{
+    background-color:whitesmoke;
+    color:  #1c3c2b;
+    border: 1px solid #1c3c2b;
+    width: 150px;
+    height: 42px;
+    font-size: small;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+.addToCart:hover{
+    background-color: #1c3c2b;
+    color: whitesmoke;
+}
+
+.decrement{
+    background-color: aliceblue;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color: #1c3c2b;
+    border: none;
+    font-size: x-large;
+   
+}
+
+.decrement:hover{
+    background-color:#1c3c2b ;
+    color: aliceblue;
+}
+
+.increment{
+    background-color: aliceblue;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    color: #1c3c2b;
+    border: none;
+    font-size: x-large;
+    
+}
+
+.increment:hover{
+    background-color:#1c3c2b ;
+    color: aliceblue;
+}
+
+.countValue{
+    background-color: aliceblue;
+    color: #1c3c2b;
+    border: none;
+    border-radius: 0px;
+    font-size: x-large;
+}
+
+.countValue:hover{
+    background-color:#1c3c2b ;
+    color: aliceblue;
+}
+
+.cartContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.freeDelivery{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.leftItems{
+    font-size: small;
+}
+
+.goToHome:hover{
+    cursor: pointer;
+}
+
+.mainProductImage{
+    width: 70%;
+}
+
+.productPageConatinerRight{
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.gradientCircle{
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
 }
